@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Theme applied before first paint to avoid a flash of the wrong color scheme -->
+  <script>
+    (function () {
+      var stored = localStorage.getItem('portfolio-theme') || 'system';
+      var dark = stored === 'dark' || (stored === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', dark);
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="icon" href="/public/favicon/favicon.ico" sizes="any" />
+  <link rel="manifest" href="/public/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Title/description are placeholders; config/seo.js overwrites them from profile.json at runtime -->
+  <title>Loading…</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased">
+  <div id="navbar"></div>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-16 pb-20 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-indigo-600 dark:text-indigo-400 font-medium mb-3" id="hero-available"></p>
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
+          <span id="hero-name"></span>
+        </h1>
+        <p class="text-xl text-slate-600 dark:text-slate-400 mb-2" id="hero-typed" aria-live="polite"></p>
+        <p class="text-slate-600 dark:text-slate-400 mb-8" id="hero-summary"></p>
+        <div class="flex flex-wrap gap-3">
+          <a id="hero-resume" href="#" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors">
+            Download résumé
+          </a>
+          <a id="hero-github" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors">
+            GitHub
+          </a>
+          <a id="hero-linkedin" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="justify-self-center">
+        <img id="hero-photo" src="" alt="" width="288" height="288"
+          class="w-56 h-56 sm:w-72 sm:h-72 rounded-3xl object-cover bg-slate-100 dark:bg-slate-800 shadow-xl"
+          fetchpriority="high" decoding="async" onerror="this.style.display='none'" />
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="border-y border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/40" aria-label="Career statistics">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div>
+          <p class="text-3xl font-bold text-indigo-600 dark:text-indigo-400"><span id="stat-years">0</span>+</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Years experience</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-indigo-600 dark:text-indigo-400"><span id="stat-projects">0</span>+</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Projects shipped</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-indigo-600 dark:text-indigo-400"><span id="stat-certs">0</span></p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Certifications</p>
+        </div>
+        <div>
+          <p class="text-3xl font-bold text-indigo-600 dark:text-indigo-400"><span id="stat-visitors">0</span>+</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Visitors this year</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20" aria-labelledby="featured-heading">
+      <div class="flex items-end justify-between mb-8">
+        <h2 id="featured-heading" class="text-2xl font-bold">Featured projects</h2>
+        <a href="/projects.html" class="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:underline">View all →</a>
+      </div>
+      <div id="featured-projects" class="grid sm:grid-cols-2 gap-6">
+        <div class="skeleton h-72"></div>
+        <div class="skeleton h-72"></div>
+      </div>
+    </section>
+
+    <!-- Skills preview -->
+    <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="text-2xl font-bold mb-8">Tech stack</h2>
+      <div id="skills-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200 dark:border-slate-800" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading" class="text-2xl font-bold mb-8">What people say</h2>
+      <div id="testimonials-grid" class="grid sm:grid-cols-2 gap-6"></div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module" src="/assets/js/pages/home.js"></script>
+</body>
+</html>

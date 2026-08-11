@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem('portfolio-theme') || 'system';
+      var dark = stored === 'dark' || (stored === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', dark);
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="icon" href="/public/favicon/favicon.ico" sizes="any" />
+  <link rel="manifest" href="/public/manifest.json" />
+  <title>Loading…</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased">
+  <div id="navbar"></div>
+
+  <main id="main-content" class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+    <h1 class="text-3xl font-bold mb-6">About me</h1>
+    <p id="about-summary" class="text-slate-600 dark:text-slate-400 leading-relaxed mb-16"></p>
+
+    <section aria-labelledby="education-heading" class="mb-16">
+      <h2 id="education-heading" class="text-2xl font-bold mb-8">Education</h2>
+      <div id="education-timeline"></div>
+    </section>
+
+    <section aria-labelledby="achievements-heading" class="mb-16">
+      <h2 id="achievements-heading" class="text-2xl font-bold mb-6">Achievements</h2>
+      <ul id="achievements-list" class="space-y-2 list-disc list-inside text-slate-600 dark:text-slate-400"></ul>
+    </section>
+
+    <section aria-labelledby="blog-heading">
+      <h2 id="blog-heading" class="text-2xl font-bold mb-6">Writing</h2>
+      <div id="blog-list" class="space-y-4"></div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script type="module" src="/assets/js/pages/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+{
+  "personal": {
+    "name": "Kaushlendra Kumar Verma",
+    "role": "Software Developer",
+    "headline": "Backend & Full-Stack Software Engineer",
+    "summary": "Software Engineer with a strong foundation in backend and full-stack development, focused on building scalable, secure, and user-centric applications. Proficient in Go, React.js, Node.js, PostgreSQL, RESTful APIs, authentication systems, microservices, and CI/CD. Passionate about AI technologies including LLMs, LangChain, and RAG.",
+    "location": "Bangalore, India",
+    "email": "kaushlendrakumarverma46@gmail.com",
+    "phone": "+91-9511070782",
+    "photo": "/assets/images/myPhoto.png",
+    "resumeUrl": "/assets/images/KaushlendraKumarVerma_Resume(15).pdf",
+    "yearsExperience": 0,
+    "availableForWork": true
+  },
+
+  "social": {
+    "github": "https://github.com/kuku-kodes",
+    "linkedin": "https://www.linkedin.com/in/kaushlendra-kumar-verma-49b32328a",
+    "twitter": "https://twitter.com/kaushlendrakv",
+    "leetcode": "https://leetcode.com/kaushlendrakv",
+    "codeforces": "https://codeforces.com/profile/kaushlendrakv",
+    "geeksforgeeks": "https://auth.geeksforgeeks.org/user/kaushlendrakv",
+    "hackerrank": "https://www.hackerrank.com/profile/kaushlendrakuma5"
+  },
+
+  "seo": {
+    "siteUrl": "https://KaushlendraKumarVerma.dev",
+    "title": "Kaushlendra Kumar Verma — Software Developer",
+    "description": "Portfolio of Kaushlendra Kumar Verma, Backend & Full-Stack Software Engineer specializing in Go, React, AI applications and scalable backend systems.",
+    "keywords": [
+      "golang",
+      "react",
+      "backend developer",
+      "full stack developer",
+      "llm",
+      "langchain",
+      "software engineer"
+    ],
+    "ogImage": "/assets/images/og-cover.jpg",
+    "twitterHandle": "@jordanrivera",
+    "themeColor": "#0f172a"
+  },
+
+  "skills": {
+    "Languages": [
+      "Go",
+      "Java",
+      "Python",
+      "C"
+    ],
+    "Frontend": [
+      "React.js",
+      "Redux Toolkit",
+      "React Router",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "Gin",
+      "REST APIs",
+      "gRPC",
+      "JWT Authentication",
+      "WebSockets"
+    ],
+    "Databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis"
+    ],
+    "Cloud": [
+      "AWS"
+    ],
+    "DevOps": [
+      "Docker",
+      "Docker Compose",
+      "Kubernetes",
+      "GitHub Actions",
+      "CI/CD",
+      "Git",
+      "GitHub"
+    ],
+    "AI": [
+      "Large Language Models (LLMs)",
+      "Prompt Engineering",
+      "LangChain",
+      "Retrieval-Augmented Generation (RAG)",
+      "AI Workflow Automation",
+      "AI Pipeline Design",
+      "n8n"
+    ],
+    "Tools": [
+      "HubSpot CRM"
+    ],
+    "Soft Skills": [
+      "Clean Architecture",
+      "Code Reviews",
+      "Testing",
+      "Agile",
+      "Collaborative Development"
+    ]
+  },
+
+  "projects": [
+    {
+      "id": "authcore",
+      "title": "AuthCore – Authentication & Authorization Microservice",
+      "category": "Backend",
+      "featured": true,
+      "image": "/assets/images/AuthApp.png",
+      "description": "Production-ready authentication and authorization microservice built with Go.",
+      "tech": [
+        "Go",
+        "Gin",
+        "PostgreSQL",
+        "Redis",
+        "JWT",
+        "Docker"
+      ],
+      "github": "https://github.com/kuku-kodes/Production-Ready-Auth-Service",
+      "demo": "",
+      "features": [
+        "JWT Authentication",
+        "RBAC",
+        "Refresh Tokens",
+        "Rate Limiting"
+      ],
+      "architecture": "Repository-Service-Handler architecture with middleware.",
+      "challenges": "Designed scalable authentication with Redis and PostgreSQL.",
+      "impact": "Developed 20+ REST APIs with production-ready architecture.",
+      "timeline": "2025"
+    },
+    {
+      "id": "devtinder",
+      "title": "DevTinder",
+      "category": "Full Stack",
+      "featured": true,
+      "image": "/assets/images/feed.png",
+      "description": "Developer networking platform using MERN Stack.",
+      "tech": [
+        "React.js",
+        "Redux Toolkit",
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ],
+      "github": "https://github.com/kuku-kodes/devTinder-web",
+      "demo": "https://dev-tinder-web-git-main-ruler-cosco.vercel.app",
+      "features": [
+        "JWT Authentication",
+        "Developer Feed",
+        "Profile Management"
+      ],
+      "architecture": "MERN stack with secure cookie-based authentication.",
+      "challenges": "Built scalable full-stack architecture.",
+      "impact": "Deployed on Vercel & Render.",
+      "timeline": "2025"
+    },
+    {
+      "id": "ai-lead",
+      "title": "AI-Powered Lead Generation & Sales Prospecting Platform",
+      "category": "AI",
+      "featured": true,
+      "image": "/assets/images/AI-Lead Generator.png",
+      "description": "AI platform for automated business lead generation.",
+      "tech": [
+        "React.js",
+        "FastAPI",
+        "Python",
+        "LangChain",
+        "OpenAI",
+        "Ollama"
+      ],
+      "github": "https://github.com/kuku-kodes/AI-agent-.git",
+      "demo": "",
+      "features": [
+        "Lead Discovery",
+        "Web Scraping",
+        "LLM Analysis"
+      ],
+      "architecture": "FastAPI backend with React frontend.",
+      "challenges": "Integrated multiple AI models.",
+      "impact": "Automated lead qualification workflows.",
+      "timeline": "2025"
+    },
+    {
+      "id": "ai-crm",
+      "title": "AI-Powered Customer Management System",
+      "category": "AI",
+      "featured": true,
+      "image": "/assets/images/CRM AI.png",
+      "description": "Customer management system powered by LLMs and RAG.",
+      "tech": [
+        "Python",
+        "FastAPI",
+        "React.js",
+        "LangChain",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "github": "https://github.com/kuku-kodes/AI-Customer-Management-System",
+      "demo": "",
+      "features": [
+        "AI Customer Support",
+        "Lead Qualification",
+        "RAG"
+      ],
+      "architecture": "Modular FastAPI backend with React frontend.",
+      "challenges": "Integrated AI APIs with structured business data.",
+      "impact": "Automated customer interaction workflows.",
+      "timeline": "2025"
+    },
+    {
+      "id": "chess-tournament-management-system",
+      "title": "Chess Tournament Management System",
+      "category": "Frontend Project",
+      "featured": true,
+      "image": "/assets/images/Chess Management.png",
+      "description": "A modern and responsive Chess Tournament Management System built with Svelte and JavaScript to simplify tournament organization through player management, tournament management, automated match generation, match history, and ranking calculation.",
+      "tech": [
+       "Svelte",
+       "JavaScript (ES6+)",
+       "Vite",
+       "Svelte Stores",
+       "CSS3",
+       "Local Storage"
+     ],
+       "github": "https://github.com/kuku-kodes/chess-tournament-submissions",
+       "demo": "https://chess-tournament-submissions.onrender.com",
+       "features": [
+       "Player CRUD operations including creation, viewing, updating, deletion, and search",
+       "Tournament creation, editing, deletion, and player registration",
+       "Automated random player pairing and match generation",
+       "Match result generation and match history persistence",
+       "Tournament ranking and leaderboard calculation based on match victories",
+       "Top 3 player ranking display",
+       "Responsive desktop, tablet, and mobile interface",
+       "Local data persistence using browser Local Storage",
+       "Reusable component-based UI architecture",
+       "Modular player, tournament, match, and ranking modules"
+    ],
+      "architecture": "Component-based Svelte architecture organized into reusable common, layout, player, tournament, match, and ranking components, with dedicated pages, services, stores, and utility modules. Application state is managed using Svelte Stores and data is persisted through Local Storage.",
+      "challenges": "Implemented tournament business logic including player registration, random player pairing, match generation, match result handling, match history, and ranking calculation while maintaining a modular and reusable frontend architecture.",
+      "impact": "Provides an end-to-end tournament management workflow covering player registration, tournament creation, automated match generation, result tracking, and leaderboard calculation in a responsive web application.",
+      "timeline": "2026"
+  }
+  ],
+
+  "experience": [
+    {
+      "company": "Teesta Travels LLP",
+      "role": "Software Development Intern",
+      "duration": "Internship",
+      "location": "India",
+      "description": "Software Development Internship.",
+      "highlights": [
+        "Worked on software engineering tasks.",
+        "Gained industry experience."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "JSS Academy of Technical Education, Noida",
+      "degree": "B.Tech in Computer Science (Data Science)",
+      "duration": "Nov 2022 — Jul 2026",
+      "description": "CGPA: 7.8/10"
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "Generative AI: Prompt Engineering",
+      "issuer": "IBM",
+      "date": "23 July 2026",
+      "credentialUrl": "2YEWCCK8KELM"
+    }
+  ],
+
+  "achievements": [
+    "Developed 40+ REST APIs.",
+    "Built production-ready Go microservices.",
+    "Implemented JWT Authentication, RBAC & Redis session management.",
+    "Hands-on experience with Docker, Kubernetes, GitHub Actions and CI/CD."
+  ],
+
+  "blogs": [
+    {
+      "title": "Getting Core Web Vitals Under Control",
+      "url": "https://blog.example.com/core-web-vitals",
+      "date": "2025-03-10",
+      "readingTime": "6 min",
+      "excerpt": "A practical playbook for diagnosing and fixing LCP, CLS, and INP regressions in production."
+    }
+  ],
+
+  "testimonials": [
+    {
+      "name": "Priya Nair",
+      "role": "Engineering Manager, Nimbus Systems",
+      "avatar": "/assets/images/testimonials/priya.jpg",
+      "quote": "Jordan is the engineer you want owning performance. Every project got measurably faster."
+    }
+  ],
+
+  "theme": {
+    "default": "system",
+    "accentColor": "#6366f1"
+  }
+}

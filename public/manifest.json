@@ -1,0 +1,21 @@
+{
+  "name": "Kaushlendra Kumar Verma — Portfolio",
+  "short_name": "Portfolio",
+  "description": "Portfolio of Kaushlendra Kumar Verma, Backend & Full-Stack Software Engineer specializing in Go, React, AI applications and scalable backend systems.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/public/favicon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/public/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

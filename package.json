@@ -1,0 +1,20 @@
+{
+  "name": "modular-portfolio",
+  "version": "1.0.0",
+  "description": "Data-driven, multi-page developer portfolio. Edit data/profile.json to reuse.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run generate:seo && vite build",
+    "preview": "vite preview",
+    "generate:seo": "node scripts/generate-seo-files.js"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3"
+  }
+}

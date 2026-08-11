@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function () {
+      var stored = localStorage.getItem('portfolio-theme') || 'system';
+      var dark = stored === 'dark' || (stored === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', dark);
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="icon" href="/public/favicon/favicon.ico" sizes="any" />
+  <link rel="manifest" href="/public/manifest.json" />
+  <title>Loading…</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased">
+  <div id="navbar"></div>
+
+  <main id="main-content" class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+    <h1 class="text-3xl font-bold mb-10">Certifications</h1>
+    <div id="certifications-list" class="grid sm:grid-cols-2 gap-4"></div>
+  </main>
+
+  <div id="footer"></div>
+  <script type="module" src="/assets/js/pages/certifications.js"></script>
+</body>
+</html>
