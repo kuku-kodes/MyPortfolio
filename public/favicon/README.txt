@@ -1,1 +1,1 @@
-Place favicon.ico, icon-192.png, and icon-512.png here.
+Place favicon.ico, KKFavicon2.png, and KKFavicon.png here.
