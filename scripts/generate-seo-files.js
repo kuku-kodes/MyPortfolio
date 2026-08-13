@@ -45,8 +45,8 @@ writeFileSync(
       background_color: '#ffffff',
       theme_color: seo.themeColor,
       icons: [
-        { src: '/public/favicon/icon-192.png', sizes: '192x192', type: 'image/png' },
-        { src: '/public/favicon/icon-512.png', sizes: '512x512', type: 'image/png' }
+        { src: '/public/favicon/KKFavicon2.png', sizes: '192x192', type: 'image/png' },
+        { src: '/public/favicon/KKFavicon.png', sizes: '512x512', type: 'image/png' }
       ]
     },
     null,
