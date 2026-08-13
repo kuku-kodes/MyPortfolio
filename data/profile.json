@@ -9,7 +9,7 @@
     "phone": "+91-9511070782",
     "photo": "/assets/images/myPhoto.png",
     "resumeUrl": "/assets/images/KaushlendraKumarVerma_Resume(15).pdf",
-    "yearsExperience": 0,
+    "yearsExperience": "1",
     "availableForWork": true
   },
 
@@ -250,6 +250,19 @@
   ],
 
   "experience": [
+    {
+  "company": "IBM",
+  "role": "Full Stack Software Developer Intern",
+  "duration": "Jan 2026 — Jun 2026",
+  "location": "India",
+  "description": "Developed full-stack web applications using React.js, JavaScript, Node.js, and REST APIs, with experience in backend integration, databases, testing, debugging, and Agile development workflows.",
+  "highlights": [
+    "Developed responsive and reusable frontend components using React.js and JavaScript while integrating Node.js backend services.",
+    "Designed and integrated RESTful APIs for data management, authentication, and end-to-end application workflows.",
+    "Worked with databases, Git-based workflows, debugging, testing, and API validation to improve application reliability and code quality.",
+    "Collaborated with cross-functional teams in an Agile environment to implement features, troubleshoot issues, and deliver maintainable software solutions."
+      ]
+    },
     {
       "company": "Teesta Travels LLP",
       "role": "Software Development Intern",
